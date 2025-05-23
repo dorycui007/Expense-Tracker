@@ -69,11 +69,33 @@ Personal-Expense-Tracker/
 ├── main.py                 # Application entry point
 ├── requirements.txt        # Python package dependencies
 ├── src/
+│   ├── __init__.py
 │   ├── analysis/          # ML models and reporting
+│   │   ├── __init__.py
+│   │   ├── ml_models.py   # ML models for forecasting and anomaly detection
+│   │   ├── nlp.py         # Natural language processing for expense analysis
+│   │   └── reporting.py   # Expense reporting and summaries
 │   ├── interface/         # GUI implementation
+│   │   ├── __init__.py
+│   │   └── gui.py         # Tkinter-based GUI for expense entry
 │   ├── storage/           # Database operations
+│   │   ├── __init__.py
+│   │   ├── database.py    # MongoDB operations and data management
+│   │   └── models.py      # Data models and schemas
 │   ├── visualization/     # Chart generation
+│   │   ├── __init__.py
+│   │   └── charts.py      # Data visualization using matplotlib
 │   └── customization/     # Budget settings
+│       ├── __init__.py
+│       └── settings.py    # Budget management and preferences
+├── tests/                 # Test suite
+│   ├── __init__.py
+│   ├── test_analysis.py   # Tests for analysis functions
+│   ├── test_database.py   # Tests for database operations
+│   └── test_gui.py        # Tests for GUI components
+├── data/                  # Data files
+│   ├── categories.json    # Expense categories configuration
+│   └── expenses.csv       # Sample expense data
 └── README.md
 ```
 
